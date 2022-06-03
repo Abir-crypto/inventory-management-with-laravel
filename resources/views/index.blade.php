@@ -14,7 +14,7 @@
 <body>
     <div class="row d-flex justify-content-between">
         <div class="col-md-6 m-4 border shadow">
-            <h3 class="text-center">Basic Information</h3>
+            <h3 class="text-center mt-4">Basic Information</h3>
             <h4>Product Name <span style="color: red">*</span></h4>
             <input type="text" class="form-control mt-2" id="product_name" placeholder="Ex: exclusive punjabi">
 
@@ -47,7 +47,7 @@
 
             <input type="text" class="form-control mt-2" id="video_link" placeholder="Video Link (optional)">
 
-            <div class="row">
+            <div class="row mt-2 mb-2">
                 <div class="col-sm-6">
                     <label for="price">price<span style="color: red">*</span></label>
                     <input type="number" class="form-control mt-2" id="price" name="price" placeholder="0">
@@ -62,11 +62,11 @@
         </div>
         <div class="col-md-5 m-4 border shadow">
 
-            <p class="text-center">Add variants when the product have different versions, such as color and size.</p>
+            <p class="text-center mt-4">Add variants when the product have different versions, such as color and size.</p>
 
             <label>
                 Color Family (example=Black,White,Navy etc.) <span style="color: red">*</span>
-                <select class="form-select" name="color">
+                <select class="form-select mt-2" name="color">
                     <option selected class="text-center">Select sub sub category</option>
                     <option value="1" class="text-center">Red</option>
                     <option value="2" class="text-center">Green</option>
@@ -78,7 +78,7 @@
                 </select>
             </label>
 
-            <div class="row">
+            <div class="row mt-4 mb-4">
                 <div class="col">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="XXXL">
@@ -160,10 +160,59 @@
 
             </div>
 
-            <div class="text-center">
+            <div class="text-center mt-4">
                 <button class="btn" style="background-color: #01cd8c; color: white"> Add to color list</button>
             </div>
 
+        </div>
+    </div>
+    <div class="row border shadow m-3 p-4">
+
+        <div class="row">
+            <h3 style="width: fit-content">Color Family Images </h3>
+            <p style="width: fit-content">(image can't be bigger than 2400*2400px)</p>
+        </div>
+
+
+
+        <div class="col-sm-1">
+            <h3>Color</h3>
+            <button class="btn-danger">Delete</button>
+        </div>
+        <div class="col-sm-5">
+
+        </div>
+        <div class="col-sm-6">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Stock Quantity</th>
+                    <th scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>XL</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td >Larry the Bird</td>
+                    <td >Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </body>
